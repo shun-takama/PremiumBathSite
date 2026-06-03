@@ -384,18 +384,20 @@ component > pagetop
 ------------------------------
 */
 .c-pagetop {
-  height: 30px;
-  width: 30px;
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-  background: var(--color-bg-accent);
-  border: solid 2px var(--color-border-white);
-  border-radius: 50%;
   display: grid;
   place-items: center;
   z-index: 2;
-  transition: opacity 0.3s;
+  height: 40px;
+  width: 40px;
+  background: var(--color-bg-accent);
+  border: solid 2px var(--color-border-white);
+  border-radius: 50%;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+  position: fixed;
+  right: 15px;
+  bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -403,8 +405,19 @@ component > pagetop
     height: 50px;
     width: 50px;
     right: 30px;
-    bottom: 30px;
   }
+}
+
+.c-pagetop.js-pagetop {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.c-pagetop.js-pagetop.is-show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 @media (any-hover: hover) {
