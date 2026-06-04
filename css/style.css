@@ -1145,15 +1145,15 @@ page > top > contact
   position: relative;
 }
 
-.top-contact-form-category::before {
+.top-contact-form-category::after {
   content: "";
   width: 10px;
   height: 10px;
   border-bottom: solid 1px var(--color-border-base);
   border-left: solid 1px var(--color-border-base);
-  transform: rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
   position: absolute;
-  top: 25%;
+  top: 50%;
   right: 20px;
 }
 
