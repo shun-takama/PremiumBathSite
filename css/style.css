@@ -1164,6 +1164,7 @@ page > top > shop
 .top-shop-information-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
 }
 
