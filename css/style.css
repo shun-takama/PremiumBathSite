@@ -1170,14 +1170,14 @@ page > top > shop
 
 @media screen and (min-width: 768px) {
   .top-shop-information-wrapper {
-    flex-direction: row;
-    align-items: center;
     gap: 40px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .top-shop-information-wrapper {
+    flex-direction: row;
+    align-items: center;
     gap: 80px;
   }
 }
@@ -1187,18 +1187,11 @@ page > top > shop
   grid-template-columns: 35% auto;
   gap: 16px 0;
   line-height: 1.2;
-  margin-left: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .top-shop-information-contents {
-    grid-template-columns: auto 1fr;
-    margin-left: 0;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .top-shop-information-contents {
+    grid-template-columns: auto 1fr;
     gap: 30px 0;
   }
 }
